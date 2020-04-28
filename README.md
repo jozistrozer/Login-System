@@ -4,9 +4,21 @@ Prijavni sistem narejen v jquery, php, mysql, bootstrap
 
 ## Implementacija v svoj projekt
 
-Če hočete uporabiti prijavni sistem, prenesite datoteke in spremenite ```db_connect.php``` in , da se ujema s strežnikom in ```js/prijava.js```, po uspešni prijavi.
+Če hočete uporabiti prijavni sistem, prenesite datoteke, uvozite podatkovno bazo in spremenite ```db_connect.php``` in , da se ujema s strežnikom in ```js/prijava.js```, po uspešni prijavi.
 
-```db_connect.php```
+**Kreiranje podatkovne baze**
+```bash
+CREATE TABLE uporabniki(
+    id int not null primary key AUTO_INCREMENT,
+    username nvarchar(20) not null unique,
+    password nvarchar(256) not null
+)
+```
+
+____
+**Spremenite spremenljivke, da bodo ustrezale vašemu strežniku.**  
+```db_connect.php```  
+
 ```bash
 <?php
 // spremenljivke za povezavo na bazo
@@ -23,8 +35,10 @@ if ($conn->connect_error) {
     die("Povezava ni uspela: " . $conn->connect_error);
 }
  ?>
-
 ```
+
+____
+**Spremenite ```if(data==1){}```, da bo ustrezal vaši spletni strani.**  
 ```js/prijava.js```
 ```bash
 // preveri ce so vsi DOM elementi ustvarjeni
