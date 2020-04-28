@@ -17,7 +17,7 @@ CREATE TABLE uporabniki(
 
 ____
 **Spremenite spremenljivke, da bodo ustrezale vašemu strežniku.**  
-```db_connect.php```  
+```php_handle/db_connect.php```  
 
 ```bash
 <?php
