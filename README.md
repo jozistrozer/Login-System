@@ -1,6 +1,6 @@
 # Prijavni sistem
 
-Prijavni sistem narejen v jquery, php, mysql, bootstrap
+Prijavni sistem narejen v **jQuery, PHP, MySQL, Bootstrap**
 
 ## Implementacija v svoj projekt
 
