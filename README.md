@@ -8,6 +8,10 @@ Prijavni sistem narejen v **jQuery, PHP, MySQL, Bootstrap**.
 
 **Kreiranje podatkovne baze**
 ```bash
+CREATE DATABASE db;
+
+use db;
+
 CREATE TABLE uporabniki(
     id int not null primary key AUTO_INCREMENT,
     username nvarchar(20) not null unique,
