@@ -2,4 +2,4 @@
 Prijavni sistem narejen v jquery, php, mysql, bootstrap
 
 
-![index.html]https://imgur.com/0LrMVhf
+![prijavna_stran](https://i.imgur.com/0LrMVhf.png)
