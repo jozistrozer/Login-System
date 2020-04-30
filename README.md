@@ -1,12 +1,12 @@
-# Prijavni sistem
+# Login System
 
-Prijavni sistem narejen v **jQuery, PHP, MySQL, Bootstrap**.
+Login System made in  **jQuery, PHP, MySQL, Bootstrap**.
 
-## Implementacija v svoj projekt
+## Implementation
 
-Če hočete uporabiti prijavni sistem, prenesite datoteke, uvozite podatkovno bazo in spremenite ```db_connect.php``` in , da se ujema s strežnikom in ```js/prijava.js```, po uspešni prijavi.
+If you want to use this login system, clone the repo, import the database and change the ```db_connect.php``` variables, that fit your credentials in the server. You also need to change the ```js/prijava.js``` so that it redirects to your desired url after a successful login.
 
-**Kreiranje podatkovne baze**
+**Creating the database**
 ```bash
 CREATE DATABASE db;
 
@@ -20,7 +20,7 @@ CREATE TABLE uporabniki(
 ```
 
 ____
-**Spremenite spremenljivke, da bodo ustrezale vašemu strežniku.**  
+**Change the variables**  
 ```php_handle/db_connect.php```  
 
 ```bash
@@ -42,7 +42,7 @@ if ($conn->connect_error) {
 ```
 
 ____
-**Spremenite ```if(data==1){}```, da bo ustrezal vaši spletni strani.**  
+**Change ```if(data==1){}```, to your desired url.**  
 ```js/prijava.js```
 ```bash
 // preveri ce so vsi DOM elementi ustvarjeni
@@ -88,8 +88,8 @@ $(document).ready(function(){
 
 ```
 
-## Kontribucija
-Pull requesti so dobrodošli. Za večje spremembe najprej odprite težavo in napišite, kaj želite spremeniti.
+## Contribution
+Pull requests are welcome.
 
 ## Slike
 ![prijavna_stran](https://i.imgur.com/0LrMVhf.png)
